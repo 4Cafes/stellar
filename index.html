@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="css/styles.css">
+
+        <title>DexHub</title>
+        <link rel="icon" type="image/x-icon" href="/images/coffee.png">
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">DexHub</a>
+                </div>
+                
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="https://cdn.discordapp.com/attachments/861447264349061162/899840182386298950/dexhub.lua" target="_blank" class="nav__link">Download</a></li>
+                        <li class="nav__item"><a href="https://discord.io/dexhub" target="_blank" class="nav__link">Discord</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home" id="home">
+                <div class="home__container bd-grid">
+                    <div class="home__img">
+                        <img src="/images/img1.png" alt="" data-speed="-2" class="move">
+                        <img src="/images/img2.png" alt="" data-speed="2" class="move">
+                        <img src="/images/img3.png" alt="" data-speed="2" class="move">
+                        <img src="/images/img4.png" alt="" data-speed="-2" class="move">
+                        <img src="/images/img5.png" alt="" data-speed="-2" class="move">
+                        <img src="/images/img6.png" alt="" data-speed="2" class="move">
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">DexHub</h1>
+                        <p id="lowerPar" class="home__description">Bottom Text</p>
+                        <a href="/loader.lua" target="_blank" class="home__button">Get Script</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--===== GSAP =====-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="js/main.js"></script>
+        
+        <script>
+            var strings = ["Exploiting With No Strings Attached.","Exploiting Made Simple.","The Next-Gen Exploiting Experience.","No Keys. No Premium. Just Good Scripts.","Exploiting with Ease.","Great Scripts, Free, Forever.","We Code, So You Don't Have to.","Forever Better Than V3RM's Search Bar."];
+            var randLower = strings[Math.floor(Math.random() * strings.length)];
+            document.getElementById("lowerPar").innerHTML = randLower;
+        </script>
+    </body>
+</html>
