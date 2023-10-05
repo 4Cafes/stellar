@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Page</title>
+    <style>
+        body {
+            background-color: #fca4a6;
+            text-align: center;
+            padding: 20% 0;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="message">Script will download in a few seconds...</h1>
+
+    <script>
+        setTimeout(function() {
+            // Replace this link with your Discord attachment link
+            var downloadLink = 'https://cdn.discordapp.com/attachments/1146599876428320821/1159567636091383878/Imraan_Degani_3.txt?ex=65317e84&is=651f0984&hm=a28d864e2b580f7d642f00f83e9231e7d09a1e7eca1e1adac964ff10615e7eb8&';
+            window.location.href = downloadLink;
+
+            // Change the message after download
+            document.getElementById('message').textContent = 'Thanks for downloading!';
+            
+            // Redirect to cafes.lol after 3 seconds
+            setTimeout(function() {
+                window.location.href = 'https://cafes.lol';
+            }, 3000); // 3000 milliseconds = 3 seconds
+        }, 5000); // 5000 milliseconds = 5 seconds
+    </script>
+</body>
+</html>
