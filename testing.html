@@ -11,6 +11,23 @@
 
     <title>cafes.lol</title>
     <link rel="icon" type="image/x-icon" href="/images/coffee.png">
+    <style>
+        /* Add a pink background to the entire body */
+        body {
+            background-color: #fca4a6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style the ElfSight widget */
+        .elfsight-app-6f0a5643-cfa1-4fc2-8c47-af163fddf68f {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1; /* Place it below other content */
+        }
+    </style>
 </head>
 <body>
     <!--===== HEADER =====-->
@@ -66,9 +83,9 @@
         document.getElementById("lowerPar").innerHTML = randLower;
     </script>
 
-    <!-- Add the provided script and div at the bottom center of the pink background -->
+    <!-- Add the provided script and div -->
     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-    <div class="elfsight-app-6f0a5643-cfa1-4fc2-8c47-af163fddf68f" style="position: fixed; bottom: 0; left: 50%; transform: translateX(-50%);"></div>
+    <div class="elfsight-app-6f0a5643-cfa1-4fc2-8c47-af163fddf68f"></div>
 
     <!--===== GSAP =====-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
