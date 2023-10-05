@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>cafes.lol</title>
+    <link rel="icon" type="image/x-icon" href="/images/coffee.png">
+</head>
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">cafes.lol</a>
+            </div>
+            
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="getscript.html" target="_blank" class="nav__link">Download</a></li>
+                    <li class="nav__item"><a href="https://url.zip/ae6bf0b" target="_blank" class="nav__link">Discord</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home" id="home">
+            <div class="home__container bd-grid">
+                <div class="home__img">
+                    <img src="/images/img1.png" alt="" data-speed="-2" class="move">
+                    <img src="/images/img2.png" alt="" data-speed="2" class="move">
+                    <img src="/images/img3.png" alt="" data-speed="2" class="move">
+                    <img src="/images/img4.png" alt="" data-speed="-2" class="move">
+                    <img src="/images/img5.png" alt="" data-speed="-2" class="move">
+                    <img src="/images/img6.png" alt="" data-speed="2" class="move">
+                </div>
+
+                <div class="home__data">
+                    <h1 class="home__title">cafes.lol</h1>
+                    <p id="lowerPar" class="home__description">Bottom Text</p>
+                    <a href="getscript.html" target="_blank" class="home__button">Get Script</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Add the provided JavaScript code here -->
+    <script>
+        var strings = ["Exploiting With No Strings Attached.","Exploiting Made Simple.","The Next-Gen Exploiting Experience.","No Keys. No Premium. Just Good Scripts.","Finding Scripts With Ease","Great Scripts, Free, Forever.","We Find Scripts, So You Don't Have to.","Forever Better Than V3RM's Search Bar."," by 4Cafes","When is byfron bypass??????"];
+        var randLower = strings[Math.floor(Math.random() * strings.length)];
+        document.getElementById("lowerPar").innerHTML = randLower;
+    </script>
+
+    <!-- Add the provided script and div at the bottom center of the pink background -->
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-6f0a5643-cfa1-4fc2-8c47-af163fddf68f" style="position: fixed; bottom: 0; left: 50%; transform: translateX(-50%);"></div>
+
+    <!--===== GSAP =====-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="js/main.js"></script>
+</body>
+</html>
