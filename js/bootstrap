@@ -1,4 +1,3 @@
--- thanks bolts uwu
 Client = {
     Modules = {
         ClientEnvoirment,
