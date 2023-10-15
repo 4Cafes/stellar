@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website with Fade-In</title>
+    <style>
+        body {
+            background-color: #fca4a6;
+            text-align: center;
+            opacity: 0; /* Initially set the opacity to 0 */
+            animation: fadeIn 2s ease-in-out forwards; /* Apply the fade-in animation */
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: gray;
+            color: white;
+            text-decoration: none;
+            border: 1px solid gray;
+            margin: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .button:hover {
+            background-color: gray;
+            color: white;
+        }
+        
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Dancing Parrot Download</h1>
+    <a href="parrotdancingpython.html" class="button">Python file</a>
+    <a href="parrotdancingexecutable.html" class="button">Executable</a>
+</body>
+</html>

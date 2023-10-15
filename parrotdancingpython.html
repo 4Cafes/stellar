@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect to File Download</title>
+    <style>
+        body {
+            background-color: #fca4a6;
+            text-align: center;
+            padding: 20% 0;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="message">You will be redirected to download a file in a few seconds...</h1>
+
+    <script>
+        setTimeout(function() {
+            // Construct the download link for the "parrot.py" file
+            var downloadLink = 'files/parrot.py';
+
+            // Create an invisible anchor element to trigger the download
+            var anchor = document.createElement('a');
+            anchor.href = downloadLink;
+            anchor.download = 'parrot.py';
+            anchor.style.display = 'none';
+            document.body.appendChild(anchor);
+            anchor.click();
+            document.body.removeChild(anchor);
+            
+            // Change the message after download
+            document.getElementById('message').textContent = 'Thanks for downloading!';
+
+            // Redirect to "cafes.lol" after a 5-second delay
+            setTimeout(function() {
+                window.location.href = 'https://cafes.lol';
+            }, 5000); // 5000 milliseconds = 5 seconds
+        }, 5000); // 5000 milliseconds = 5 seconds
+    </script>
+</body>
+</html>
