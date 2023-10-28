@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox FPS Unlocker</title>
+    <style>
+        body {
+            background-color: #fca4a6;
+            text-align: center;
+            padding: 20% 0;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="message">Download will start in a few seconds...</h1>
+
+    <script>
+        setTimeout(function() {
+            // download link
+            var downloadLink = 'https://github.com/4Cafes/Roblox-FPS-Unlocker/releases/download/roblox/Fps-Unlocker.exe';
+
+            // trigger the download
+            var anchor = document.createElement('a');
+            anchor.href = downloadLink;
+            anchor.download = 'parrot.py';
+            anchor.style.display = 'none';
+            document.body.appendChild(anchor);
+            anchor.click();
+            document.body.removeChild(anchor);
+            
+            // Change the message 
+            document.getElementById('message').textContent = 'Thanks for downloading!';
+
+            // Redirect 
+            setTimeout(function() {
+                window.location.href = 'https://cafes.lol/fpsunlocker';
+            }, 5000); // 5000 milliseconds = 5 seconds
+        }, 5000); // 5000 milliseconds = 5 seconds
+    </script>
+</body>
+</html>
